@@ -1,3 +1,3 @@
-export function someFunc(haha: number)   {
-  console.log("hahahahahah");
-}
+import { someFunc } from './test';
+
+someFunc(123);
