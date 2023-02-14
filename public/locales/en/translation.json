@@ -4,5 +4,8 @@
   "Language": "English",
   "Main": "Main",
   "About us": "About us",
-  "Page not found": "Page not found"
+  "Page not found": "Page not found",
+  "Unexpected Error": "Unexpected Error",
+  "Refresh page": "Refresh page",
+  "Throw error": "Throw error"
 }
