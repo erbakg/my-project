@@ -12,7 +12,7 @@
     // Позволяет компилятору обрабатывать js код
     "allowJs": true,
     "moduleResolution": "node",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "*": ["./src/*"]
     },
@@ -36,5 +36,9 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "include": [
+    "./config/jest/setupTests.ts",
+    "src"
+  ],
 }
