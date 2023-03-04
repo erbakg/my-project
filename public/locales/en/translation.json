@@ -12,5 +12,7 @@
   "О сайте": "About us",
   "Поменять": "Change",
   "Короткий язык": "EN",
-  "Login": "Login"
+  "Login": "Login",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }
