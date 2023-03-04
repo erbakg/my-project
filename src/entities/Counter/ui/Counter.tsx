@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { Button } from 'shared/ui/Button/Button';
 import { getCounterValue } from '../model/selectors/GetCounterValue/GetCounterValue';
-import { CounterActions } from '../model/slice/counterSlice';
+import { counterActions } from '../model/slice/counterSlice';
 
 export const Counter = () => {
     const dispatch = useDispatch();
@@ -11,11 +11,11 @@ export const Counter = () => {
     const { t } = useTranslation();
 
     const increment = () => {
-        dispatch(CounterActions.increment());
+        dispatch(counterActions.increment());
     };
 
     const decrement = () => {
-        dispatch(CounterActions.decrement());
+        dispatch(counterActions.decrement());
     };
 
     return (

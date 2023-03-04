@@ -1,8 +1,13 @@
 {
   "": "",
   " decrement": " decrement",
+  "E": "E",
+  "Enter email": "Enter email",
+  "Enter password": "Enter password",
+  "Enter username": "Enter username",
   "Login": "Login",
   "decrement": "decrement",
+  "e": "e",
   "increment": "increment",
   "throw error": "throw error",
   "Войти": "Войти",

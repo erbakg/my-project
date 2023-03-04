@@ -3,6 +3,17 @@
 @import "themes/normal";
 @import "themes/dark";
 
+@font-face {
+    font-family: Consolas;
+    src: url("../../fonts/consolas/1db29588408eadbd4406aae9238555eb.eot");
+    src:
+        url("../../fonts/consolas/1db29588408eadbd4406aae9238555eb.eot?#iefix") format("embedded-opentype"),
+        url("../../fonts/consolas/1db29588408eadbd4406aae9238555eb.woff2") format("woff2"),
+        url("../../fonts/consolas/1db29588408eadbd4406aae9238555eb.woff") format("woff"),
+        url("../../fonts/consolas/1db29588408eadbd4406aae9238555eb.ttf") format("truetype"),
+        url("../../fonts/consolas/1db29588408eadbd4406aae9238555eb.svg#Consolas") format("svg");
+}
+
 body {
     font: var(--font-m);
     color: var(--primary-color);
