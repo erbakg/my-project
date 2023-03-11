@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": { 
+    "first":"Erbol",
+    "last":"Mederbekov",
+    "age":"24",
+    "currency":"USD",
+    "country":"Kyrgyzstan",
+    "city":"Bishkek",
+    "username":"admin",
+    "avatar":"https://img.wallscloud.net/uploads/thumb/2934825256/cat-hulk-1-56249-540x1080-MM-80.webp"
+  }
 }
