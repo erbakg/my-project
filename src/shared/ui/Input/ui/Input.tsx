@@ -1,5 +1,5 @@
 import React, {
-    InputHTMLAttributes, memo, useState, useEffect, useRef,
+    InputHTMLAttributes, memo, useState, useEffect, useRef, RefObject,
 } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Input.module.scss';
@@ -24,11 +24,11 @@ export const Input = memo((props: InputProps) => {
         ...otherProps
     } = props;
 
-    const inputRef = useRef<HTMLInputElement>();
+    const inputRef = useRef() as RefObject<HTMLInputElement>;
 
     const [isFocused, setIsFocused] = useState(false);
 
-    const [caretPosition, setCaretPosition] = useState(0);
+    const [caretPosition, setCaretPosition] = useState<number>(0);
 
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange?.(e.target.value);
@@ -46,13 +46,13 @@ export const Input = memo((props: InputProps) => {
     useEffect(() => {
         if (autoFocus) {
             setIsFocused(true);
-            inputRef.current.focus();
+            inputRef.current?.focus();
         }
     }, [autoFocus]);
 
     const onSelect = (event: React.SyntheticEvent<HTMLDivElement, Event>) => {
         if (event.target instanceof HTMLInputElement) {
-            setCaretPosition(event.target.selectionStart);
+            setCaretPosition(event.target.selectionStart || 0);
         }
     };
 

@@ -1,38 +1,38 @@
 {
-  "posts": [
-    {
-      "id": "1",
-      "title": "json-server",
-      "userId": "1"
-    },
-    {
-      "id": "2",
-      "title": "json-server",
-      "userId": "2"
+    "posts": [
+        {
+            "id": "1",
+            "title": "json-server",
+            "userId": "1"
+        },
+        {
+            "id": "2",
+            "title": "json-server",
+            "userId": "2"
+        }
+    ],
+    "comments": [
+        {
+            "id": "1",
+            "body": "some comment",
+            "postId": "1"
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "username": "admin",
+            "password": "123"
+        }
+    ],
+    "profile": {
+        "first": "Erbol",
+        "last": "Mederbekov",
+        "age": "24",
+        "currency": "USD",
+        "country": "Kyrgyzstan",
+        "city": "Bishkek",
+        "username": "admin",
+        "avatar": "https://img.wallscloud.net/uploads/thumb/2934825256/cat-hulk-1-56249-540x1080-MM-80.webp"
     }
-  ],
-  "comments": [
-    {
-      "id": "1",
-      "body": "some comment",
-      "postId": "1"
-    }
-  ],
-  "users": [
-    {
-      "id": "1",
-      "username": "admin",
-      "password": "123"
-    }
-  ],
-  "profile": { 
-    "first":"Erbol",
-    "last":"Mederbekov",
-    "age":"24",
-    "currency":"USD",
-    "country":"Kyrgyzstan",
-    "city":"Bishkek",
-    "username":"admin",
-    "avatar":"https://img.wallscloud.net/uploads/thumb/2934825256/cat-hulk-1-56249-540x1080-MM-80.webp"
-  }
 }
