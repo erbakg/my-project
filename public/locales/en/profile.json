@@ -1,6 +1,16 @@
 {
-    "Edit": "Edit",
-    "Your name": "Your name",
-    "Your lastname": "Your lastname",
-    "Profile": "Profile"
+  "Edit": "Edit",
+  "Your name": "Your name",
+  "Your lastname": "Your lastname",
+  "Profile": "Profile",
+  "Loading filed": "Loading filed",
+  "Loading to reload": "Try to reload",
+  "Cancel": "Cancel",
+  "Save": "Save",
+  "Your age": "Your age",
+  "Your city": "City",
+  "Your username": "Your username",
+  "Set link to avatar": "Set link to avatar",
+  "Provide currency": "Provide currency",
+  "Provide country": "Provide country"
 }
