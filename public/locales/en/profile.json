@@ -12,5 +12,10 @@
   "Your username": "Your username",
   "Set link to avatar": "Set link to avatar",
   "Provide currency": "Provide currency",
-  "Provide country": "Provide country"
+  "Provide country": "Provide country",
+  "Server error while saving": "Server error occured while saving",
+  "Incorrect age": "Incorrect age",
+  "Data is not provided": "Data is not provided",
+  "Incorrect name or lastname": "Incorrect name or lastname",
+  "Incorrect city": "Incorrect city"
 }

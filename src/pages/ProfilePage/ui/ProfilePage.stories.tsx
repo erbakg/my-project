@@ -3,6 +3,8 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 import { Theme } from 'app/providers/ThemeProvider';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Currency } from 'entities/Currency';
+import AvatarImg from 'shared/assets/tests/storybook.png';
+import { Country } from 'entities/Country';
 import ProfilePage from './ProfilePage';
 
 export default {
@@ -23,14 +25,28 @@ Normal.decorators = [StoreDecorator({
             first: '1234',
             last: '1234',
             age: 23,
-            currency: Currency.RUB,
+            currency: Currency.USD,
             city: '1234',
             username: '1234',
-            avatar: '1234',
+            avatar: AvatarImg,
+            country: Country.Kyrgyzstan,
         },
     },
 })];
 
 export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})];
+Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
+    profile: {
+        form: {
+            first: 'black',
+            last: 'dark',
+            age: 23,
+            currency: Currency.USD,
+            city: '1234',
+            username: '1234',
+            avatar: AvatarImg,
+            country: Country.Kyrgyzstan,
+        },
+    },
+})];
