@@ -1,6 +1,0 @@
-
-describe(' ArticleDetails', () => {
-
-				expect().toEqual();
-		});
-});
