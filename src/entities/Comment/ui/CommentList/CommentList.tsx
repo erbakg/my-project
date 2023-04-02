@@ -4,6 +4,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Text } from 'shared/ui/Text/Text';
 import { Comment } from '../../model/types/comment';
 import { CommentCard } from '../CommentCard/CommentCard';
+import cls from './CommentList.module.scss';
 
 interface CommentListProps {
     className?: string;
@@ -16,9 +17,15 @@ export const CommentList = memo((props: CommentListProps) => {
 
     const { t } = useTranslation();
     return (
-        <div className={classNames('', {}, [className])}>
+        <div className={classNames(cls.CommentList, {}, [className])}>
             {comments?.length ? (
-                comments.map((comment) => <CommentCard comment={comment} />)
+                comments.map((comment) => (
+                    <CommentCard
+                        isLoading={isLoading}
+                        comment={comment}
+                        className={cls.comment}
+                    />
+                ))
             ) : (
                 <Text title={t('No comments')} />
             )}
